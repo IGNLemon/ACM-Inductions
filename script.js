@@ -1,12 +1,9 @@
 let applicants = [];
 let selectedApplicant = null;
 
-// Move to the next step
 function nextStep(step) {
-  // Hide all panels
   document.querySelectorAll('.panel').forEach(panel => panel.classList.add('hidden'));
 
-  // Show the relevant panel based on the step
   if (step === 2) {
     const name = document.getElementById('applicant-name').value;
     const email = document.getElementById('applicant-email').value;
@@ -35,7 +32,6 @@ function nextStep(step) {
   }
 }
 
-// Complete the process and add the applicant
 function completeProcess() {
   const panelName = document.getElementById('panel-name').value;
 
@@ -51,7 +47,6 @@ function completeProcess() {
   }
 }
 
-// Display the applicants in the table
 function displayApplicants() {
   const applicantsBody = document.getElementById('applicants-body');
   applicantsBody.innerHTML = '';
@@ -72,7 +67,6 @@ function displayApplicants() {
   });
 }
 
-// Reset the form to step 1
 function resetForm() {
   document.getElementById('applicant-name').value = '';
   document.getElementById('applicant-email').value = '';

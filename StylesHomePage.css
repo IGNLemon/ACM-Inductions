@@ -1,0 +1,99 @@
+body{
+    margin-left: 75px;
+    background-image: url('images/BackgroundImg1.avif');
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat; 
+    color: black;
+}
+.Welcome{
+    display: inline-block;
+    font-size: 40px;
+    font-weight: bold;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-left: 400px;
+    padding-top: 20px;
+}
+
+.about1Div{
+    display: inline-block;
+    width: 350px;
+}
+
+.about1{
+    width: 350px;
+    height:350px;
+    object-fit: cover;
+    object-position: top;
+    margin-bottom: 20px;
+}
+
+.aboutACMHeading{
+    margin-bottom: 40px;
+}
+
+.aboutACMHeadingContent{
+    margin-bottom: 0px;
+    font-size: 30px;
+    font-weight: bold;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+.aboutACMDiv{
+    margin-left: 30px;
+    display: inline-block;
+    vertical-align: top;
+    width: 1200px;
+}
+
+.master1{
+    margin-bottom: 30px;
+}
+
+.aboutACMContent{
+    display: inline-block;
+    margin-top: 0px;
+    font-size: 25px;
+    font-family: Arial, Helvetica, sans-serif;
+    padding-bottom: 5px;
+}
+
+.about2{
+    width: 600px;
+    height: 600px;
+    object-fit: contain;
+}
+
+.about2Div{
+    padding-left: 200px;
+    display: inline-block;
+    width: 500px;
+}
+
+.DPDiv{
+    display: inline-block;
+    margin-left: 200px;
+}
+.introductionPhoto{
+    height: 600px;
+    width: 600px;
+    object-fit: contain;
+}
+
+.inductionLink{
+    margin-top: 20px;
+}
+
+.link{
+    display: block;
+    margin-top: 0px;
+    font-size: 35px;
+    font-family: Arial, Helvetica, sans-serif;
+    text-decoration: underline;
+    text-align: center;
+    color: red;
+}
+
+.link:hover{
+    color: black;
+}

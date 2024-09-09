@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Induction Process Management</title>
+  <link rel="stylesheet" href="StylesProcessPage.css">
+</head>
+<body>
+  <div class="container">
+    <h1>ACM Induction Process Management</h1>
+    
+    <!-- Step 1: Applicant Details Form -->
+    <div id="panel-details" class="panel active">
+      <h2>Step 1: Applicant Details</h2>
+      <input type="text" id="applicant-name" placeholder="Applicant Name">
+      <input type="email" id="applicant-email" placeholder="Applicant Email">
+      <input type="text" id="applicant-id" placeholder="ID No"> <!-- New ID_No field -->
+      <button onclick="nextStep(2)">Next: Schedule Interview</button>
+    </div>
+
+    <!-- Step 2: Schedule Interview -->
+    <div id="panel-schedule" class="panel hidden">
+      <h2>Step 2: Schedule Interview for <span id="applicant-name-display"></span></h2>
+      <label for="interview-date">Date:</label>
+      <input type="date" id="interview-date">
+      <button onclick="nextStep(3)">Next: Assign Panel</button>
+    </div>
+
+    <!-- Step 3: Assign Interview Panel -->
+    <div id="panel-assign" class="panel hidden">
+      <h2>Step 3: Assign Interview Panel for <span id="panel-applicant-name"></span></h2>
+      <input type="text" id="panel-name" placeholder="Panel Member Name">
+      <button onclick="completeProcess()">Complete Process</button>
+    </div>
+
+    <!-- Applicants Table -->
+    <h2>Applicants</h2>
+    <table id="applicants-table">
+      <thead>
+        <tr>
+          <th>ID No</th> <!-- New column for ID_No -->
+          <th>Name</th>
+          <th>Email</th>
+          <th>Status</th>
+          <th>Scheduled Time</th>
+          <th>Assigned Panel</th>
+        </tr>
+      </thead>
+      <tbody id="applicants-body">
+        <!-- Applicant rows go here -->
+      </tbody>
+    </table>
+  </div>
+
+  <script src="script.js"></script>
+</body>
+</html>
